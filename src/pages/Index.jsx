@@ -1,10 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 const Index = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl">Your Blank Canvas</h1>
-      <p>Chat with the agent to start making edits.</p>
+    <div className="min-h-screen flex flex-col">
+      <header className="bg-gray-800 text-white p-4">
+        <h1 className="text-2xl font-bold">My Application</h1>
+      </header>
+
+      <main className="flex-grow p-4">
+        <Card className="max-w-md mx-auto p-6">
+          <h2 className="text-xl font-semibold mb-4">Welcome</h2>
+          <p className="mb-4">This is a bare-bones application that you can modify and build upon.</p>
+          <Button>Get Started</Button>
+        </Card>
+      </main>
+
+      <footer className="bg-gray-200 p-4 text-center">
+        <p>&copy; 2023 My Application. All rights reserved.</p>
+      </footer>
     </div>
   );
 };
